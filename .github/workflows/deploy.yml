@@ -21,7 +21,9 @@ jobs:
           node-version: '18'
 
       - name: Install Dependencies
-        run: npm install
+        run: |
+          npm install
+          npm install hexo-oh-my-live2d
 
       - name: Install Hexo Git Deployer
         run: |
